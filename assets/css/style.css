@@ -1,0 +1,189 @@
+/* 
+  1. Từ trong ra ngoài
+  2. Từ trên xuống dưới
+  3. Từ tổng quan đến chi tiết
+*/
+
+/* 
+  1. Vị trí
+  2. Kích thước
+  3. Màu sắc
+  4. Kiểu dáng
+*/
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.white-font {
+  color: #fff !important;
+}
+#main {
+
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  height: 46px;
+  z-index: 1;
+}
+#nav {
+  display: inline-block;
+}
+#nav, .subnav {
+  list-style-type: none;
+}
+#nav > li {
+  position: relative;
+  display: inline-block;
+}
+#nav .subnav {
+  display: none;
+  min-width: 160px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#nav > li > a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  line-height: 46px;
+  text-transform: uppercase;
+  padding: 0 24px;
+}
+.subnav li a {
+  display: block;
+  line-height: 38px;
+  text-decoration: none;
+  color: #000;
+  padding: 0 12px;
+}
+.subnav li {
+  width: 100%;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav > li:hover > a,
+.subnav > li:hover > a {
+  color: #000;
+  background-color: #ccc;
+}
+#nav .nav-button {
+  font-size: 14px;
+}
+#header .search-btn {
+  float: right;
+  padding: 0 21px;
+}
+#header .search-icon {
+  line-height: 46px;
+  font-size: 22px;
+  color: #fff;
+}
+#header .search-btn:hover {
+  background-color: #f44336;
+  cursor: pointer;
+}
+#slider {
+  position: relative;
+  margin-top: 46px;
+  padding-top: 50%;
+  background: url('/assets/img/slider/chicago.jpg') top center/cover no-repeat;
+}
+#slider .text-content {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 28px;
+}
+#slider .text-content h2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+#slider .text-content p {
+  margin-top: 12px;
+  font-size: 15px;
+}
+#content {
+
+}
+
+#content .container {
+  width: 786px;
+  margin: 64px auto;
+
+}
+#content .heading-content h2 {
+  font-size: 32px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 10px;
+  margin: 16px 0;
+}
+#content .heading-content p {
+  text-align: center;
+  font-style: italic;
+  opacity: 0.6;
+  margin: 12px 0;
+}
+#content .text-content {
+  font-size: 15px;
+  line-height: 1.4;
+  text-align: justify;
+}
+#content .tour-section {
+  width: 100%;
+  background-color: #000;
+  padding: 64px 0;
+}
+#content .band-member {
+  display: flex;
+  justify-content: space-around;
+  margin: 64px 0;
+}
+#content .band-list p {
+  text-align: center;
+  padding: 12px 0;
+}
+#content .band-list img {
+  width: 150px;
+  border-radius: 4px;
+}
+.book-tickets {
+  background: #fff;
+  width: 786px;
+  margin: 0 auto;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+}
+.book-tickets .show-time {
+
+}
+.show-time .sold-out {
+  
+}
+.show-time .tickets-quantity {
+
+}
+
+#footer {
+
+}
